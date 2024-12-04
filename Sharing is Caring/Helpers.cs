@@ -46,6 +46,20 @@ namespace Advent
             return ints;
         }
 
+        public static List<double> ReadAllDoublesInString(string input)
+        {
+            var intsResult = Regex.Matches(input, @"(-?\d+)");
+
+            var doubles = new List<double>();
+
+            foreach (Match result in intsResult)
+            {
+                doubles.Add(double.Parse(result.Value));
+            }
+
+            return doubles;
+        }
+
         public static List<List<int>> ReadAllIntsPerLine(string filePath)
         {
             var intsPerLine = new List<List<int>>();
