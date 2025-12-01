@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31912.275
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2020 All Days, Every Day", "2020 All Days, Every Day\2020 All Days, Every Day.csproj", "{B128AB6D-00B4-458B-944E-C90D452EBB36}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2023 To Busy With Work", "2023 To Busy With Work\2023 To Busy With Work.csproj", "{46C6A54B-E04F-4923-8FE2-2D9A39D633A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2024 Historical Research", "2024 Historical Research\2024 Historical Research.csproj", "{42ED3296-2DEF-41CF-BC32-E2DBA9F039EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2025 The halvening", "2025 The halvening\2025 The halvening.csproj", "{E8D10F87-EAE3-47CE-96A7-7F89AECA8C6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{42ED3296-2DEF-41CF-BC32-E2DBA9F039EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42ED3296-2DEF-41CF-BC32-E2DBA9F039EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42ED3296-2DEF-41CF-BC32-E2DBA9F039EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D10F87-EAE3-47CE-96A7-7F89AECA8C6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D10F87-EAE3-47CE-96A7-7F89AECA8C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D10F87-EAE3-47CE-96A7-7F89AECA8C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D10F87-EAE3-47CE-96A7-7F89AECA8C6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		Sharing is Caring\Sharing is Caring.projitems*{7c500f31-6af2-4e06-a7f3-c1a1bf20e2a9}*SharedItemsImports = 5
 		Sharing is Caring\Sharing is Caring.projitems*{b128ab6d-00b4-458b-944e-c90d452ebb36}*SharedItemsImports = 5
 		Sharing is Caring\Sharing is Caring.projitems*{b2bebfa7-5942-4d75-86fb-f0482b2ea73e}*SharedItemsImports = 5
+		Sharing is Caring\Sharing is Caring.projitems*{e8d10f87-eae3-47ce-96a7-7f89aeca8c6e}*SharedItemsImports = 5
 		Sharing is Caring\Sharing is Caring.projitems*{ee05b9a0-2144-4165-973e-6959e6658e21}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,19 @@
+{
+  "profiles": {
+    "Most Recent Problem": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "All Problems": {
+      "commandName": "Project",
+      "commandLineArgs": "All"
+    },
+    "Specific Problem": {
+      "commandName": "Project",
+      "commandLineArgs": "02"
+    }
+  }
+}
