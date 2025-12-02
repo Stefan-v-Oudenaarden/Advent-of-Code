@@ -17,8 +17,8 @@ namespace Day_01
 
         public void Run()
         {
-            var testinput = ParseInput($"Day {Dayname}/inputTest.txt");
-            Solve(testinput);
+            //var testinput = ParseInput($"Day {Dayname}/inputTest.txt");
+            //Solve(testinput);
 
             var input = ParseInput($"Day {Dayname}/input.txt");
             Solve(input);
