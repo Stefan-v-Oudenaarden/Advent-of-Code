@@ -1,0 +1,63 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using Serilog;
+using Advent;
+using RegExtract;
+
+namespace Day_03
+{
+    //https://adventofcode.com/2025/day/03
+    public class Part1 : IAdventProblem
+    {
+        private string Dayname => Helpers.GetDayFromNamespace(this);
+        public string ProblemName { get => $"Day {Dayname}: Lobby. Part One."; }
+
+        public void Run()
+        {
+            //var testinput = ParseInput($"Day {Dayname}/inputTest.txt");
+            //Solve(testinput);
+
+            var input = ParseInput($"Day {Dayname}/input.txt");
+            Solve(input);
+        }
+
+        public void Solve(List<List<int>> input)
+        {
+            var maxJoltsPerBank = new List<int>();
+            foreach (var jolts in input)
+            {
+                int maxJolts = 0;
+                for (var start = 0; start < jolts.Count - 1; start++)
+                {
+                    for (var end = start + 1; end < jolts.Count; end++)
+                    {
+                        var joltValue = (jolts[start] * 10) + jolts[end];
+                        if (joltValue > maxJolts)
+                            maxJolts = joltValue;
+                    }
+                }
+                maxJoltsPerBank.Add(maxJolts);
+            }
+            Log.Information("Jolts per bank {banks} total jolts sum {sum}.", maxJoltsPerBank, maxJoltsPerBank.Sum());
+        }
+
+        public static List<List<int>> ParseInput(string filePath)
+        {
+            var input = Helpers.ReadStringsFile(filePath);
+            var output = new List<List<int>>();
+            foreach (var line in input)
+            {
+                var jolts = new List<int>();
+                foreach (var c in line)
+                {
+                    jolts.Add(int.Parse(c.ToString()));
+                }
+                output.Add(jolts);
+            }
+
+            return output;
+        }
+    }
+}
