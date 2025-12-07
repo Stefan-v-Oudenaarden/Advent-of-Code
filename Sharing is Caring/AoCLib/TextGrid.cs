@@ -126,6 +126,7 @@ namespace Advent
 
             return output;
         }
+
         public int AdjacentCellsCount(int x, int y, string Needle)
         {
             var count = 0;
@@ -254,6 +255,23 @@ namespace Advent
                     if (this[x, y] == needle)
                     {
                         yield return (this[x, y], x, y);
+                    }
+                }
+            }
+        }
+
+        public IEnumerable<(string value, int x, int y)> FindStrings(IEnumerable<string> needles)
+        {
+            foreach (var needle in needles)
+            {
+                for (var x = 0; x < Grid.GetLength(0); x++)
+                {
+                    for (var y = 0; y < Grid.GetLength(1); y++)
+                    {
+                        if (this[x, y] == needle)
+                        {
+                            yield return (this[x, y], x, y);
+                        }
                     }
                 }
             }
